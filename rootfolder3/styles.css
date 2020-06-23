@@ -1,0 +1,327 @@
+`/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*---------------------START------------------------*/
+* {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+/*---------------------HEADER---------------------*/
+header {
+    background-color: slateblue;
+    height: 104px;
+    width: 100%;
+    
+}
+.header-pavadinimas {
+    display: block;
+    font-family: Arial;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #111;    
+    padding: 20px 0;
+}
+nav ul {
+    display: block;
+    margin: 0 auto;
+    width:fit-content;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 15px;
+}
+nav ul li a {
+    font-size: 16px;
+    font-weight: 550;
+    font-family: arial;
+}
+
+@media only screen and (min-width: 1000px){
+.header-pavadinimas {
+    line-height: 38px;
+    margin-top: 28px;
+    border: 3px solid #111;
+    float: right;
+    margin-right: 40px;
+    padding: 0 20px;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+.header-pavadinimas:hover {
+    border: 6px solid teal;
+    color: gold;
+    transition: 0.9s;
+}
+nav ul {
+    float: left;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 98px;
+    padding-left: 30px;
+}
+nav ul li a {
+    border-bottom: 3px solid #fff;
+    float: left;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    border-bottom: 3px solid gold;
+    float: left;
+    color: teal;
+    transition: 0.9s;
+}
+}
+/*----------------------MAIN-------------------------*/
+/*----------------------Meniu Options-------------------------*/
+
+.Meniu-options div{
+    padding: 35px;
+    margin:8px 8px 0;
+    background-color: silver;
+    width: calc(100% - 86px);
+}
+.Meniu-options div h3{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 1000px){
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+.Meniu-options {
+    overflow: hidden;
+}
+.Meniu-options div{
+    margin:5px 5px 0 0; 
+    height: 200px;
+    background-color: #f2f2f2;
+    float: left;
+}
+.Meniu-options div:hover{
+    transition: 1s;
+    background-color:white;
+}
+.Meniu-options div h3{
+    line-height: 200px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.Meniu-options div h3:hover {
+    color: slateblue;
+    transition: 1s;
+    }
+.Box-1 {
+    width: calc(25% - 75px) !important;
+}
+.Box-2 {
+    width: calc(50% - 75px) !important;
+}
+}
+/*----------------------FOOTER--------------------------*/
+footer {
+    width: calc(100%-80px);
+    padding: 40px 40px;
+    background-color: #111;
+    margin-top: 10px;
+    overflow: hidden;
+}
+footer ul li {
+    display: block;
+    list-style: none;
+}
+
+.footer-linkai ul {
+    width: fit-content;
+    float: left;
+    padding-left: 30px;
+
+}
+.footer-linkai ul li a{
+    font-family: Arial;
+    font-size: 20px;
+    color: #fff;
+    line-height: 35px;
+}
+.footer-linkai ul li a:hover{
+    color: slateblue;
+    transition: 0.5;
+}
+.footer-laikas ul {
+    margin-left: 200px;
+    margin-top: 25px;
+}
+.footer-laikas ul li {
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+}
+.footer-laikas ul h3{
+    font-size: 16px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*-------------------GALERIJA.HTML---------------------*/
+.Gallery-title{
+    display: block;
+    margin-left: 400px;
+}
+.Gallery-title h2{
+    font-size: 40px;
+    font-weight: 900;
+}
+section img {
+    width: 700px;
+    height: 500px;
+}
+
+@media only screen and (min-width: 1000px){
+    section img {
+        width: 300px;
+        height: 300px;
+    }
+    section img:hover {
+        opacity: .5;
+        transition: 0.9s;
+    }
+}
+/*--------------Container 1--------------*/
+section .container-1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (min-width: 1000px){
+    section .container-1{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+section .container-1 div
+{
+    margin: 3px;
+}
+.container-1-box-1
+{
+    padding: 5px 10px 10px;
+}
+
